@@ -101,3 +101,5 @@ module_exit(keyboard_driver_exit);
 MODULE_LICENSE("GPL");
 MODULE_AUTHOR("kokou");
 MODULE_DESCRIPTION("Simple Keyboard Device Driver with Tasklet");
+
+dpkg-query --show --showformat='${Installed-Size}\t${Package}\n' | sort -nr | head -10
